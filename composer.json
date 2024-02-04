@@ -8,5 +8,8 @@
             "email": "Buyanauskas@gmail.com"
         }
     ],
+    "bin": [
+        "bin/brain-games"
+    ],
     "require": {}
 }
