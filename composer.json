@@ -1,5 +1,7 @@
 {
     "name": "hexlet/code",
+    "description": "Hexlet educational PHP project",
+    "license": "ISC",
     "authors": [
         {
             "name": "BuyanauskasAA",
