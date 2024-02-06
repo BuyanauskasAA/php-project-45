@@ -7,7 +7,7 @@ use function BrainGames\Utils\getProgression;
 
 function playBrainProgression(): void
 {
-    $rules = 'Find the greatest common divisor of given numbers.';
+    $rules = 'What number is missing in the progression?';
     $makeQuestion = function (): array {
         $start = rand(1, 50);
         $step = rand(1, 10);
