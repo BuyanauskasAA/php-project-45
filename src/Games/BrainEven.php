@@ -10,7 +10,7 @@ function playBrainEven(): void
     $makeQuestion = function (): array {
         $num = rand(1, 100);
 
-        $question = $num;
+        $question = (string) $num;
         $answer = $num % 2 === 0 ? 'yes' : 'no';
 
         return [
