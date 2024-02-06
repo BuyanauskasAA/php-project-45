@@ -16,6 +16,7 @@
         "files": [
             "src/Cli.php",
             "src/Games/BrainEven.php",
+            "src/Games/BrainCalc.php"
         ]
     },
     "require": {
