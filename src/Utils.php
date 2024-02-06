@@ -15,3 +15,13 @@ function getGcd(int $num1, int $num2): int
 
     return $gcd;
 }
+
+function getProgression(int $start, int $step, int $length = 10 ): array
+{
+    $progression = [];
+    for ($i = 0, $item = $start; $i < $length; $i++, $item += $step) {
+        $progression[] = $item;
+    }
+
+    return $progression;
+}

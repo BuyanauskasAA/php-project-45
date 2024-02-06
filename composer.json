@@ -19,7 +19,8 @@
             "src/Utils.php",
             "src/Games/BrainEven.php",
             "src/Games/BrainCalc.php",
-            "src/Games/BrainGcd.php"
+            "src/Games/BrainGcd.php",
+            "src/Games/BrainProgression.php"
         ]
     },
     "require": {
