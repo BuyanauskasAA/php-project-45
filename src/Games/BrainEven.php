@@ -1,11 +1,12 @@
 <?php
 
-namespace BrainGames\BrainEven;
+namespace BrainGames\Games\BrainEven;
 
 use function cli\line;
 use function cli\prompt;
 
-function brainEven() {
+function brainEven()
+{
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
@@ -13,12 +14,12 @@ function brainEven() {
 
     $questionsCount = 3;
     for ($i = 0; $i < $questionsCount; $i++) {
-        $randomNumber = mt_rand(1, 100);
+        $randomNumber = rand(1, 100);
         $correctAnswer = $randomNumber % 2 === 0 ? 'yes' : 'no';
 
-        line('Question: %s', $randomNumber);
-        $answer = prompt('Your anwer:');
-    
+        line('Question: %d', $randomNumber);
+        $answer = prompt('Your answer:');
+
         if ($answer === $correctAnswer) {
             line('Correct!');
         } else {
