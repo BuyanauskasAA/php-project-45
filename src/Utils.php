@@ -16,7 +16,7 @@ function getGcd(int $num1, int $num2): int
     return $gcd;
 }
 
-function getProgression(int $start, int $step, int $length = 10 ): array
+function getProgression(int $start, int $step, int $length = 10): array
 {
     $progression = [];
     for ($i = 0, $item = $start; $i < $length; $i++, $item += $step) {
@@ -24,4 +24,19 @@ function getProgression(int $start, int $step, int $length = 10 ): array
     }
 
     return $progression;
+}
+
+function isPrime(int $num): bool
+{
+    if ($num < 2) {
+        return false;
+    }
+
+    for ($i = 2; $i <= $num / 2; $i++) {
+        if ($num % $i === 0) {
+            return false;
+        }
+    }
+
+    return true;
 }
